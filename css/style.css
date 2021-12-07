@@ -13,3 +13,75 @@ body {
   line-height:135%;
   
 }
+
+aside, nav, footer, header, section {
+  display: block;
+
+}
+
+ul {
+  list-style:none;
+
+}
+
+a {
+  text-decoration: none;
+
+}
+
+a:hover {
+  text-decoration: none;
+
+}
+
+/*------------------------------------------
+Главные блоки
+------------------------------------------*/
+
+.header {
+  width:100%;
+  background: #0dbfe5;
+  height: 57px;
+  z-index: 4;
+}
+    #headerInner {
+      position: relative;
+      border: 0px solid #333;
+      width: 1200px;
+      height: 250px;
+      margin: 0 auto;
+      margin-top: 0px;
+    }
+
+#wrapper{
+  margin-top:40px;
+  width:1200px;
+  margin: 0 auto;
+  height: auto !important;
+}
+
+    #content {
+      margin-top: 40px;
+    }
+
+        #content #colLeft {
+          background: #fff;
+          float: left;
+          width: 800px;
+          margin-right: 0px;
+        }
+
+        #content #colRight {
+          margin-left:45px;
+          float: left;
+          width: 350px;
+          position: relative;
+        }
+
+    #middle:after {
+      content:'.';
+      display: block;
+      clear: both;
+      visibility: hidden;
+      height: 0;
+    }
