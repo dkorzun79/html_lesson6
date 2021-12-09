@@ -85,3 +85,46 @@ a:hover {
       visibility: hidden;
       height: 0;
     }
+
+    /*Верхнее правое меню*/
+
+    .topMenuRight {
+      height: 57px;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      border: 0px solid #1FA2E1;
+    }
+
+        .topMenuRight ul{
+          padding-left: 0px;
+        }
+
+            .topMenuRight ul li{
+              background: url(../images/line.png) 0px 0px no-repeat;
+              float: left;
+              height: 57px;
+            }
+
+                .topMenuRight ul li a{
+                  margin-top: 0px;
+                  font-weight: 100;
+                  border-right: 0px solid #adadad;
+                  display: block;
+                  color: #fff;
+                  text-decoration: none;
+                  line-height: 20px;
+                  font-size: 18px;
+                  padding: 16px 20px 21px 20px;                  
+                }
+
+                    .topMenuRight ul li a:hover{
+                      background: #fff;
+                      color: #555;                      
+                    }
+
+
+
+                
+    
+
