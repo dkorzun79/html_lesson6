@@ -123,6 +123,56 @@ a:hover {
                       color: #555;                      
                     }
 
+    /*Иконки соц.сетей*/
+
+    .share-new {
+      z-index: 1;
+      position: absolute;
+      right: 0px;
+      top: 14px;      
+    }
+
+        .share-new a{
+          display: inline-block;
+          width: 19px;
+          height: 19px;
+          margin: 2px 0px 2px 0;          
+        }
+
+        .share-new .icon-twitter {
+          background: url(../images/twitter-variation.png) 0 center no-repeat;
+          padding: 4px 0px 0px 5px;
+          font-size: 17px;
+          margin-right: 3px;          
+        }
+
+        .share-new .icon-rss {
+          background: url(../images/rss-variation.png) 0 center no-repeat;
+          padding: 4px 0px 0px 5px;
+          font-size: 17px;
+          margin-right: 0px;          
+        }
+
+        .share-new .icon-mail {
+          background: url(../images/email-variation.png) 0 center no-repeat;
+          padding: 4px 0px 0px 5px;
+          font-size: 17px;
+          margin-right: 0px;          
+        }
+
+/*------------------------------
+Логотип
+-------------------------------*/
+
+        .logo {
+          position: absolute;
+          left: 0px;
+          top: 90px;
+        }
+
+
+
+
 
 
                 
