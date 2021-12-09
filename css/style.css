@@ -170,6 +170,88 @@ a:hover {
           top: 90px;
         }
 
+/*-----------------------------
+BottomMenu
+-----------------------------*/
+
+        .bottomMenu {
+          width:1200px;
+          height: 70px;
+          position: absolute;
+          left: 0px;
+          bottom: 0px;
+          background: url(../images/bgmenu.png) 0px 0px repeat-x;
+        }
+
+            #dropdown_nav{
+              font-weight: bold;
+              display: inline-block;
+              list-style: none;
+              border-bottom: 0px solid #777;
+              margin-top: 18px;              
+            }
+
+                #dropdown_nav li{
+                  float: left;
+                  position: relative;
+                  display: inline-block;             
+                }
+
+                    #dropdown_nav li a{
+                      font-weight: 100;
+                      font-size: 18px;
+                      color: #fff;
+                      padding: 15px 22px 20px 22px;  
+                      background: url(../images/linemenu.png) right no-repeat;
+                      -webkit-transition: background-color 0.3s 0.01s ease;
+                         -moz-transition: background-color 0.3s 0.01s ease;
+                    }
+
+                    #dropdown_nav li a:hover {
+                      background: #000;
+                      text-decoration: none;
+                      color: #0dbfe5;                      
+                    }
+
+                    #dropdown_nav li a:first{
+                      -webkit-border-radius: 5px 0px 0px 5px;
+                         -moz-border-radius: 5px 0px 0px 5px;
+                    }
+
+                    /*выпадающее меню*/
+
+                    #dropdown_nav .sub_nav {
+                      z-index: 4;
+                      width: 180px;
+                      padding: 0px;
+                      position: absolute;
+                      top: 42px;
+                      left: 0px;
+                      border: 0px solid #ddd;
+                      border-top: none;
+                      background: #000;
+                    }
+
+                       #dropdown_nav .sub_nav li{
+                         width: 180px;
+                         padding: 0px;                         
+                       }
+
+                           #dropdown_nav .sub_nav li a{
+                             background: none;
+                             font-weight: normal;
+                             font-size: 15px;
+                             display: block;
+                             border-bottom: 0px solid #e5e0b3;
+                             padding-left: 10px;
+                             color:#fff;                                           
+                           }
+
+                           #dropdown_nav .sub_nav li a:hover {
+                             background: #222;
+                             color: #0dbfe5;
+                           }
+
 
 
 
