@@ -187,7 +187,7 @@ BottomMenu
             }
 
                 #dropdown_nav li{
-                  float: left;
+                  /*float: left;*/
                   position: relative;
                   display: inline-block;             
                 }
