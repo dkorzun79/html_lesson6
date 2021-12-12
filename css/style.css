@@ -55,7 +55,6 @@ a:hover {
       margin-top: 0px;
     }
 
-
     #content {
       margin-top: 40px;
     }
@@ -201,6 +200,8 @@ BottomMenu
                       background: url(../images/linemenu.png) right no-repeat;
                       -webkit-transition: background-color 0.3s 0.01s ease;
                          -moz-transition: background-color 0.3s 0.01s ease;
+                              transition: background-color 0.3s 0.01s ease;
+
                     }
 
                     #dropdown_nav li a:hover {
@@ -212,6 +213,7 @@ BottomMenu
                     #dropdown_nav li a:first{
                       -webkit-border-radius: 5px 0px 0px 5px;
                          -moz-border-radius: 5px 0px 0px 5px;
+                              border-radius: 5px 0px 0px 5px;
                     }
 
                     /*выпадающее меню*/
@@ -248,9 +250,18 @@ BottomMenu
                              color: #0dbfe5;
                            }
 
+
 /*------------------------------------
 Блок последние записи
--------------------------------------*/    
+-------------------------------------*/ 
+
+    #lpblock{
+      margin: auto;
+      position: relative;
+      text-align: center;
+      height: 100px;
+    }
+
 
     .raz{
       margin: 0 auto;
@@ -259,7 +270,7 @@ BottomMenu
       width: 116px;
       height: 29px;
       margin-bottom: 50px;
-      background: url(../images/raz.png);
+      background: url(../images/raz.png) 0px 0px no-repeat;
     }
 
     .postBox {
@@ -272,7 +283,7 @@ BottomMenu
     }
 
         .postBox h2 a {
-          font-family: "Segoe UI Semilight" "Segoe UI", Tahoma, Helvetica, Sans-Serif;
+          font-family: 'Segoe UI Semibold', 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
           color: #000;
           font-style: normal;
           font-weight: 100;
@@ -368,7 +379,7 @@ BottomMenu
           width: 335px;
           background: #f7f7f7 url(../images/h2img.png) 320px 14px no-repeat;
           font-size: 18px;
-          font-family: "Segoe UI Semilight" "Segoe UI", Tahoma, Helvetica, Sans-Serif;
+          font-family: 'Segoe UI Semibold', 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
           color: #333;
           display: block;
           padding: 10px 0 15px 20px;
@@ -418,7 +429,8 @@ BottomMenu
         .footernav {
           position: absolute;
           right: 0px;
-          top: 35px;
+          bottom: 35px;
+          
         }
 
             .footernav ul li {
