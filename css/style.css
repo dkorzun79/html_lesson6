@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+/*------------------------------------*\
+  
+\*------------------------------------*/
+
 body {
   width: 100%;
   height: 100%;
@@ -29,6 +33,9 @@ a:hover {
   text-decoration: none;
 }
 
+
+/* Скрытые заголовки разделов */
+
 .hidden {
   display: none;
 }
@@ -41,7 +48,7 @@ a:hover {
   margin-top:40px;
   width:1200px;
   margin: 0 auto;
-  height: auto !important;
+  height: auto /*!important*/;
 }
 
 .header {
@@ -50,7 +57,7 @@ a:hover {
   height: 57px;
   z-index: 4;
 }
-    #headerInner {
+    #header-inner {
       position: relative;
       border: 0px solid #333;
       width: 1200px;
@@ -59,35 +66,10 @@ a:hover {
       margin-top: 0px;
     }
 
-    #content {
-      margin-top: 40px;
-    }
-
-        #content #colLeft {
-          background: #fff;
-          float: left;
-          width: 800px;
-          margin-right: 0px;
-        }
-
-        #content #colRight {
-          margin-left:45px;
-          float: left;
-          width: 350px;
-          position: relative;
-        }
-
-    #middle:after {
-      content:'.';
-      display: block;
-      clear: both;
-      visibility: hidden;
-      height: 0;
-    }
 
     /*Верхнее правое меню*/
 
-    .topMenuRight {
+    .top-menu-right {
       height: 57px;
       position: absolute;
       left: 0px;
@@ -95,17 +77,17 @@ a:hover {
       border: 0px solid #1FA2E1;
     }
 
-        .topMenuRight ul{
+        .top-menu-right ul{
           padding-left: 0px;
         }
 
-            .topMenuRight ul li{
+            .top-menu-right li{
               background: url(../images/line.png) 0px 0px no-repeat;
               float: left;
               height: 57px;              
             }
 
-                .topMenuRight ul li a{
+                .top-menu-right a{
                   margin-top: 0px;
                   font-weight: 100;
                   border-right: 0px solid #adadad;
@@ -117,7 +99,7 @@ a:hover {
                   padding: 16px 20px 21px 20px;                  
                 }
 
-                    .topMenuRight ul li a:hover{
+                    .top-menu-right a:hover{
                       background: #fff;
                       color: #555;                      
                     }
@@ -138,26 +120,26 @@ a:hover {
           margin: 2px 0px 2px 0;          
         }
 
-        .share-new .icon-twitter {
-          background: url(../images/twitter-variation.png) 0 center no-repeat;
-          padding: 4px 0px 0px 5px;
-          font-size: 17px;
-          margin-right: 3px;          
-        }
+        /*.share-new */.icon-twitter {
+                         background: url(../images/twitter-variation.png) 0 center no-repeat;
+                         padding: 4px 0px 0px 5px;
+                         font-size: 17px;
+                         margin-right: 3px;          
+                        }
 
-        .share-new .icon-rss {
-          background: url(../images/rss-variation.png) 0 center no-repeat;
-          padding: 4px 0px 0px 5px;
-          font-size: 17px;
-          margin-right: 0px;          
-        }
+        /*.share-new*/ .icon-rss {
+                         background: url(../images/rss-variation.png) 0 center no-repeat;
+                         padding: 4px 0px 0px 5px;
+                         font-size: 17px;
+                         margin-right: 0px;          
+                        }
 
-        .share-new .icon-mail {
-          background: url(../images/email-variation.png) 0 center no-repeat;
-          padding: 4px 0px 0px 5px;
-          font-size: 17px;
-          margin-right: 0px;          
-        }
+        /*.share-new */.icon-mail {
+                         background: url(../images/email-variation.png) 0 center no-repeat;
+                         padding: 4px 0px 0px 5px;
+                         font-size: 17px;
+                         margin-right: 0px;          
+                        }
 
 /*------------------------------
 Логотип
@@ -170,10 +152,10 @@ a:hover {
         }
 
 /*-----------------------------
-BottomMenu
+bottom-menu
 -----------------------------*/
 
-        .bottomMenu {
+        .bottom-menu {
           width:1200px;
           height: 70px;
           position: absolute;
@@ -196,7 +178,7 @@ BottomMenu
                   display: inline-block;             
                 }
 
-                    #dropdown_nav li a{
+                    #dropdown_nav a{
                       font-weight: 100;
                       font-size: 18px;
                       color: #fff;
@@ -208,13 +190,13 @@ BottomMenu
 
                     }
 
-                    #dropdown_nav li a:hover {
+                    #dropdown_nav a:hover {
                       background: #000;
                       text-decoration: none;
                       color: #0dbfe5;                      
                     }
 
-                    #dropdown_nav li a:first{
+                    #dropdown_nav a:first{
                       -webkit-border-radius: 5px 0px 0px 5px;
                          -moz-border-radius: 5px 0px 0px 5px;
                               border-radius: 5px 0px 0px 5px;
@@ -222,37 +204,37 @@ BottomMenu
 
                     /*выпадающее меню*/
 
-                    #dropdown_nav .sub_nav {
-                      z-index: 4;
-                      width: 180px;
-                      padding: 0px;
-                      position: absolute;
-                      top: 42px;
-                      left: 0px;
-                      border: 0px solid #ddd;
-                      border-top: none;
-                      background: #000;
-                    }
+                    /*#dropdown_nav*/ .sub_nav {
+                                        z-index: 4;
+                                        width: 180px;
+                                        padding: 0px;
+                                        position: absolute;
+                                        top: 42px;
+                                        left: 0px;
+                                        border: 0px solid #ddd;
+                                        border-top: none;
+                                        background: #000;
+                                      }
 
-                       #dropdown_nav .sub_nav li{
-                         width: 180px;
-                         padding: 0px;                         
-                       }
+                    /*#dropdown_nav*/ .sub_nav li{
+                                        width: 180px;
+                                        padding: 0px;                         
+                                      }
 
-                           #dropdown_nav .sub_nav li a{
-                             background: none;
-                             font-weight: normal;
-                             font-size: 15px;
-                             display: block;
-                             border-bottom: 0px solid #e5e0b3;
-                             padding-left: 10px;
-                             color:#fff;                                           
-                           }
+                    /*#dropdown_nav*/ .sub_nav a{
+                                        background: none;
+                                        font-weight: normal;
+                                        font-size: 15px;
+                                        display: block;
+                                        border-bottom: 0px solid #e5e0b3;
+                                        padding-left: 10px;
+                                        color:#fff;                           
+                                      }
 
-                           #dropdown_nav .sub_nav li a:hover {
-                             background: #222;
-                             color: #0dbfe5;
-                           }
+                     /* #dropdown_nav*/ .sub_nav li a:hover {
+                                        background: #222;
+                                        color: #0dbfe5;
+                                      }
 
 
 /*------------------------------------
@@ -273,6 +255,31 @@ BottomMenu
       background-color: #eeeeee;
     }
 
+    #content {
+      margin-top: 40px;
+    }
+
+    /*#content*/ #col-left {
+                   background: #fff;
+                   float: left;
+                   width: 800px;
+                   margin-right: 0px;
+                 }
+
+    /*#content*/ #col-right {
+                   margin-left:45px;
+                   float: left;
+                   width: 350px;
+                   position: relative;
+                 }
+
+    #middle:after {
+      content:'.';
+      display: block;
+      clear: both;
+      visibility: hidden;
+      height: 0;
+    }
 
     .raz{
       margin: 0 auto;
@@ -284,7 +291,7 @@ BottomMenu
       background: url(../images/raz.png) 0px 0px no-repeat;
     }
 
-    .postBox {
+    .post-box {
       border: 0px solid #333;
       background: #fff;
       width: 700px;
@@ -293,7 +300,7 @@ BottomMenu
       margin-bottom: 50px;
     }
 
-        .postBox h2 a {
+        .post-box h2 a {
           font-family: 'Segoe UI Semibold', 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
           color: #000;
           font-style: normal;
@@ -306,40 +313,42 @@ BottomMenu
                   transition: all 0.3s 0.01s ease;
         }
 
-            .postBox h2 a:hover {
+            .post-box h2 a:hover {
               color:#0dbfe5;
             }
 
-        .postBox .textPreview {
-          border: 0px solid #333;
-          width: 800px;
-          margin-bottom: 30px;
-        }
+        /*.post-box*/ .text-preview {
+                       border: 0px solid #333;
+                       width: 800px;
+                       margin-bottom: 30px;
+                      }
 
-            .postBox .textPreview p{
+            .post-box p{
               margin-top: 0;
             }
 
-        .postBox .postThumb {
-          margin: 0px 0px 15px 0;          
-        }
+        /*.post-box*/ .post-thumb {
+                        margin: 0px 0px 15px 0;          
+                      }
 
-        .postBox .info {
-          margin: 20px 0px 8px 0px;
-          padding: 0px 0px;
-          font-size: 0.89em;
-          color: #a4a4a4;
-        } 
+       /*.post-box*/  .info {
+                        margin: 20px 0px 8px 0px;
+                        padding: 0px 0px;
+                        font-size: 0.89em;
+                        color: #a4a4a4;
+                      } 
 
-        .postBox .info a {
-          color: #a4a4a4;
-        } 
+        /*.post-box*/ .info a {
+                        color: #a4a4a4;
+                      } 
 
-        .postBox .postMeta {
+      /*  .post-box .postMeta {
           padding-bottom: 15px;
           clear:left;
           overflow: hidden;          
-        }
+        }*/
+
+/*------ Кнопка Далее.  */
 
         .more-link a{
           border-radius: 3px;
@@ -359,7 +368,7 @@ BottomMenu
               background: #000;
               color: #0dbfe5;
             }
-
+/* Окно поиска */
     #form-query {
       position: relative;
       background: #eeeeee;
@@ -390,14 +399,14 @@ BottomMenu
 
 /*---------виджеты----------*/
 
-    .rightBox {
+    .right-box {
       margin-top: 0px;
       margin-left: 0px;
       width: 330px;
       margin-bottom: 30px;
     }
 
-        .rightBox h2 {
+        .right-box h2 {
           width: 335px;
           background: #f7f7f7 url(../images/h2img.png) 320px 14px no-repeat;
           font-size: 18px;
@@ -407,7 +416,7 @@ BottomMenu
           padding: 10px 0 15px 20px;
           }
 
-              .rightBox ul li {
+              .right-box li {
                 width:350px;
                 padding: 10px 0;
                 border-bottom: 1px solid #f6f6f6;
@@ -415,11 +424,11 @@ BottomMenu
                 line-height: 16px;                
               }
 
-              .rightBox a {
+              .right-box a {
                 color: #333;                
               }
 
-                  .rightBox a:hover {
+                  .right-box a:hover {
                     color: #0dbfe5;
                   }
 
@@ -434,7 +443,7 @@ BottomMenu
   background: #0dbfe5;  
 }
 
-    #footerInner {
+    #footer-inner {
       position: relative;
       border: 0px solid #000;
       width: 1200px;
@@ -442,24 +451,24 @@ BottomMenu
       height: 100px;
     }
 
-        #footerlogo {
+        #footer-logo {
           position: absolute;
           left: 0px;
           top: 25px;
         }
 
-        .footernav {
+        .footer-nav {
           position: absolute;
           right: 0px;
           bottom: 35px;
           
         }
 
-            .footernav ul li {
+            .footer-nav li {
               float: left;
             }
 
-                .footernav ul li a{
+                .footer-nav li a{
                   margin-top: 0px;
                   font-weight: 100;
                   border-right: 0px solid #adadad;
@@ -471,6 +480,6 @@ BottomMenu
                   padding: 0px 0px 0px 25px;                  
                 }
 
-                    .footernav ul li a:hover {
+                    .footer-nav li a:hover {
                       color: #333;
                     }

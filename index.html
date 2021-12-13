@@ -12,7 +12,7 @@
 
   
 
-  <!-- Begin #bottomMenu -->
+  <!-- Begin #bottom-menu-->
   
   <script>
 
@@ -37,12 +37,12 @@
   <body>
   
     <!-- Начало хидер -->
-    <header class="header"> 
-    <h1 class="hidden">Блог верстальщика</h2>
+    <header class="header">   <!-- голудая полоса вверху сайта для top-menu-->
+    <h1 class="hidden">Блог верстальщика</h1>
   
-      <div id="headerInner">
+      <div id="header-inner"> <!-- блок включающий top-menu, главное bottom-menu b соц.сети share-new-->
   
-        <nav class="topMenuRight">
+        <nav class="top-menu-right">
           <h2 class="hidden">Верхняя панель навигации</h2>
   
           <ul>
@@ -55,7 +55,7 @@
   
         </nav>
   
-        <div class="share-new">
+        <div class="share-new"> <!--ссылки на соц сети-->
   
           <a class="icon-mail" href="#" title="Подписаться по e-mail" target="_blank"></a>
           <a class="icon-rss" href="#" title="Подписаться на rss" target="_blank"></a>
@@ -63,15 +63,15 @@
   
         </div>
   
-        <div class="logo">
+        <div class="logo">  <!-- блок логотипа -->
           <a href="#"><img src="images/logo.png" alt="Блог"></a>
         </div>
   
-        <!-- Начало #bottomMenu -->
-        <nav class="bottomMenu">
+        <!-- Начало #bottom-menu Категории-->
+        <nav class="bottom-menu"> 
           <h2 class="hidden">Навигация по категориям</h2>
   
-          <ul id="dropdown_nav">
+          <ul id="dropdown_nav">            <!-- выпадающее меню Категории-->
             <li><a href="#">Категория</a>
   
               <ul class="sub_nav">
@@ -79,7 +79,7 @@
                 <li><a href="#">Подменю #2</a>
                 <li><a href="#">Подменю #3</a>
                 <li><a href="#">Подменю #4</a>
-              </ul>
+              </ul>                        <!-- конец выпадающего меню Категории-->
   
             <li><a href="#">Категория 1</a>
             <li><a href="#">Категория 2</a>
@@ -89,15 +89,11 @@
           </ul>
   
         </nav>
-        <!-- конец #bottomMenu -->
+        <!-- конец #bottom-menu -->  
   
+      </div>  
   
-      </div>
-  
-  
-    </header> <!-- Конец хидер -->
-  
-  
+    </header> <!-- Конец хидер --> 
   
   
     <!-- Начало враппер-->
@@ -105,18 +101,15 @@
   
       <div id="lpblock">
         <h2>Последние записи</h2>
-      </div>
+      </div> 
   
+      <div id="middle">  
+        <div id="content"> <!--для выравнивания по высоте col-left и col-right-->
+          <div id="col-left">
   
-  
-  
-      <div id="middle">
-        <div id="content">
-          <div id="colLeft">
-  
-            <!-- Начало .postBox -->
-            <article class="postBox">
-              <div class="postThumb"><a href="#"><img width="800" height="300" src="images/tumbs/girls/5.jpg"
+            <!-- Начало .post-box -->
+            <article class="post-box">
+              <div class="post-thumb"><a href="#"><img width="800" height="300" src="images/tumbs/girls/5.jpg"
                     alt="girl_5"></a>
               </div>
   
@@ -126,24 +119,24 @@
                 Комментариев: <a href="#">238</a>
               </div>
   
-              <div class="textPreview">
+              <div class="text-preview">
                 <p>Приветствую Вас, уважаемые читатели блога. Сегодня спешу представить Вам осередную бесплатную подборку
                   шаблонов на CSS3 и HTML5, а также здесь есть несколько шаблонов с большими и встроенными JQuery
                   слайдерами изображений. В общем, я надеюсь, что Вы здесь найдете то что Вам нужно. Настаждайтесь.</p>
               </div>
   
-              <div class="more-link">
+              <div class="more-link">     <!-- Кнопка Далее-->
                 <a href="#">Далее</a>
               </div>
   
             </article>
-            <!-- Конец .postBox -->
+            <!-- Конец .post-box -->
   
-            <div class="raz"></div>
+            <div class="raz"></div>  <!-- Разделитель между постами блога-->
   
-            <!-- Начало .postBox -->
-            <article class="postBox">
-              <div class="postThumb"><a href="#"><img width="800" height="300" src="images/tumbs/girls/6.jpg"
+            <!-- Начало .post-box -->
+            <article class="post-box">
+              <div class="post-thumb"><a href="#"><img width="800" height="300" src="images/tumbs/girls/6.jpg"
                     alt="girl_6"></a>
               </div>
   
@@ -153,7 +146,7 @@
                 Комментариев: <a href="#">238</a>
               </div>
   
-              <div class="textPreview">
+              <div class="text-preview">
                 <p>Приветствую Вас, уважаемые читатели блога. Сегодня спешу представить Вам осередную бесплатную подборку
                   шаблонов
                   на CSS3 и HTML5, а также здесь есть несколько шаблонов с большими и встроенными JQuery слайдерами
@@ -161,19 +154,19 @@
                   общем, я надеюсь, что Вы здесь найдете то что Вам нужно. Настаждайтесь.</p>
               </div>
   
-              <div class="more-link">
+              <div class="more-link"> <!-- Кнопка Далее-->
                 <a href="#">Далее</a>
               </div>
   
             </article>
   
-            <!-- Конец .postBox -->
+            <!-- Конец .post-box -->
   
-            <div class="raz"></div>
+            <div class="raz"></div> <!-- Разделитель между постами блога-->
   
-            <!-- Начало .postBox -->
-            <article class="postBox">
-              <div class="postThumb"><a href="#"><img width="800" height="300" src="images/tumbs/girls/7.png"
+            <!-- Начало .post-box -->
+            <article class="post-box">
+              <div class="post-thumb"><a href="#"><img width="800" height="300" src="images/tumbs/girls/7.png"
                     alt="girl_7"></a>
               </div>
   
@@ -183,7 +176,7 @@
                 Комментариев: <a href="#">238</a>
               </div>
   
-              <div class="textPreview">
+              <div class="text-preview">
                 <p>Приветствую Вас, уважаемые читатели блога. Сегодня спешу представить Вам осередную бесплатную подборку
                   шаблонов
                   на CSS3 и HTML5, а также здесь есть несколько шаблонов с большими и встроенными JQuery слайдерами
@@ -191,19 +184,19 @@
                   общем, я надеюсь, что Вы здесь найдете то что Вам нужно. Настаждайтесь.</p>
               </div>
   
-              <div class="more-link">
+              <div class="more-link"> <!-- Кнопка Далее-->
                 <a href="#">Далее</a>
               </div>
   
             </article>
   
-            <!-- Конец .postBox -->
+            <!-- Конец .post-box -->
   
-            <div class="raz"></div>
+            <div class="raz"></div>         <!-- Разделитель между постами блога-->
   
-            <!-- Начало .postBox -->
-            <article class="postBox">
-              <div class="postThumb"><a href="#"><img width="800" height="300" src="images/tumbs/girls/8.jpg"
+            <!-- Начало .post-box -->
+            <article class="post-box">
+              <div class="post-thumb"><a href="#"><img width="800" height="300" src="images/tumbs/girls/8.jpg"
                     alt="girl_8"></a>
               </div>
   
@@ -213,7 +206,7 @@
                 Комментариев: <a href="#">238</a>
               </div>
   
-              <div class="textPreview">
+              <div class="text-preview">
                 <p>Приветствую Вас, уважаемые читатели блога. Сегодня спешу представить Вам осередную бесплатную подборку
                   шаблонов
                   на CSS3 и HTML5, а также здесь есть несколько шаблонов с большими и встроенными JQuery слайдерами
@@ -221,19 +214,19 @@
                   общем, я надеюсь, что Вы здесь найдете то что Вам нужно. Настаждайтесь.</p>
               </div>
   
-              <div class="more-link">
+              <div class="more-link"> <!-- Кнопка Далее-->
                 <a href="#">Далее</a>
               </div>
   
             </article>
   
-            <!-- Конец .postBox -->
+            <!-- Конец .post-box -->
   
-            <div class="raz"></div>
+            <div class="raz"></div> <!-- Разделитель между постами блога-->
   
-            <!-- Начало .postBox -->
-            <article class="postBox">
-              <div class="postThumb"><a href="#"><img width="800" height="300" src="images/tumbs/girls/9.jpg"
+            <!-- Начало .post-box -->
+            <article class="post-box">
+              <div class="post-thumb"><a href="#"><img width="800" height="300" src="images/tumbs/girls/9.jpg"
                     alt="girl_9"></a>
               </div>
   
@@ -243,7 +236,7 @@
                 Комментариев: <a href="#">238</a>
               </div>
   
-              <div class="textPreview">
+              <div class="text-preview">
                 <p>Приветствую Вас, уважаемые читатели блога. Сегодня спешу представить Вам осередную бесплатную подборку
                   шаблонов
                   на CSS3 и HTML5, а также здесь есть несколько шаблонов с большими и встроенными JQuery слайдерами
@@ -251,26 +244,28 @@
                   общем, я надеюсь, что Вы здесь найдете то что Вам нужно. Настаждайтесь.</p>
               </div>
   
-              <div class="more-link">
+              <div class="more-link"> <!-- Кнопка Далее-->
                 <a href="#">Далее</a>
               </div>
   
             </article>
-            <!-- Конец .postBox -->
+            <!-- Конец .post-box -->
   
-            <div class="raz"></div>
+            <div class="raz"></div> <!-- Разделитель между постами блога-->
   
   
           </div><!-- Конец коллефт -->
   
-          <aside id="colRight">
+          <aside id="col-right">   <!-- Правая часть сайта-->
   
+           <!-- окно поиска -->
+           
             <form method="get" action="/search" target="_blank">
               <input name="q" id="form-query" value="" placeholder="Поиск...">
               <input id="form-querysub" type=submit value="">
             </form>
   
-            <div class="rightBox">
+            <div class="right-box">
   
               <h2>Виджет 1</h2>
   
@@ -369,14 +364,14 @@
     <footer id="footer">
       
   
-      <div id="footerInner">
+      <div id="footer-inner">
 
   
-        <div id="footerlogo">
+        <div id="footer-logo">   <!--Нижний логотип-->
           <a href="#"><img src="images/logo.png" alt="Блог"></a>
         </div>
   
-        <nav class="footernav">
+        <nav class="footer-nav"> 
           <h2 class="hidden">Нижняя панель навигации</h2>
   
           <ul>
